@@ -36,6 +36,10 @@ export class IUser {
   }
 }
 
+export const NewUserRepository = (): UserRepository => {
+  return new UserSQLite()
+}
+
 
 
 interface UserRepository {
